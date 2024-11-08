@@ -15,4 +15,5 @@ dp = Dispatcher()
 async def main():
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot, allowed_updates=ALLOWED_UPDATES)
+
 asyncio.run(main())
